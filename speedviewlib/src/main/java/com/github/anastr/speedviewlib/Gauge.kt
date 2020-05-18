@@ -1001,7 +1001,7 @@ abstract class Gauge constructor(context: Context, attrs: AttributeSet? = null, 
      * @throws IllegalArgumentException if `minSpeed >= maxSpeed`
      */
     fun setMinMaxSpeed(minSpeed: Float, maxSpeed: Float) {
-        require(minSpeed < maxSpeed) { "minSpeed must be smaller than maxSpeed !!" }
+       // require(minSpeed < maxSpeed) { "minSpeed must be smaller than maxSpeed !!" }
         cancelSpeedAnimator()
         _minSpeed = minSpeed
         _maxSpeed = maxSpeed

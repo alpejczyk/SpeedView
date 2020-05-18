@@ -476,7 +476,7 @@ abstract class Speedometer @JvmOverloads constructor(context: Context, attrs: At
      * @return current Degree at that speed.
      */
     protected fun getDegreeAtSpeed(speed: Float): Float {
-        return (speed - minSpeed) * (endDegree - startDegree) / (maxSpeed - minSpeed) + startDegree
+        return (speed - maxSpeed) * (startDegree - endDegree) / (maxSpeed - minSpeed) + startDegree
     }
 
     /**
